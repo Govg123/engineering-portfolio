@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wyatt Catz — Purdue Mechanical Engineering portfolio: aerospace hardware, CFD, thermal systems, solar car, prototyping, and testing." />
+  <title>Wyatt Catz | Mechanical Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav shell">
+      <a class="brand" href="#top">WC<span>.</span></a>
+      <button class="menu" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a class="nav-pill" href="mailto:wyatt.s.catz@gmail.com">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">MECHANICAL ENGINEERING · HARDWARE · THERMAL SYSTEMS</p>
+        <h1>I like engineering that ends in <span>something real.</span></h1>
+        <p class="lede">I’m Wyatt Catz, a Purdue Mechanical Engineering student working across aerospace hardware, CFD, thermal systems, vehicle design, and hands-on prototyping.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">See my projects</a>
+          <a class="btn secondary" href="mailto:wyatt.s.catz@gmail.com">Email me</a>
+        </div>
+        <div class="quick-facts">
+          <div><strong>3.94</strong><span>GPA</span></div>
+          <div><strong>Purdue</strong><span>Mechanical Engineering</span></div>
+          <div><strong>2029</strong><span>Expected graduation</span></div>
+        </div>
+      </div>
+      <div class="hero-media reveal">
+        <div class="media-frame hero-frame">
+          <img src="assets/propulsion-banner.webp" alt="Aerospace propulsion test hardware with a visible exhaust plume" />
+          <div class="media-label"><span>Aerospace project environment</span><span>Hands-on systems</span></div>
+        </div>
+        <div class="floating-card">
+          <img src="assets/rocket-cad.webp" alt="CAD model of Purdue Space Program rocket hardware" />
+          <span>CAD → hardware → test</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Design, test, diagnose, iterate.</h2>
+        <p>These projects show how I approach engineering problems—from CAD and analysis to physical systems, test data, and design changes.</p>
+      </div>
+
+      <article class="case-study reveal">
+        <div class="case-title">
+          <div>
+            <p class="eyebrow">PURDUE SPACE PROGRAM</p>
+            <h3>Autonomous Rocket Gantry & Landing Interface</h3>
+          </div>
+          <p class="case-summary">Mechanical design for a gantry system supporting an autonomously launching and landing rocket, with emphasis on interfaces, assembly, manufacturability, and cross-team integration.</p>
+        </div>
+
+        <div class="media-grid two">
+          <figure class="media-frame video-frame">
+            <video controls muted playsinline preload="metadata" poster="assets/rocket-cad.webp">
+              <source src="assets/psp-test.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Team test footage with live position/orientation telemetry.</figcaption>
+          </figure>
+          <figure class="media-frame contain">
+            <img src="assets/rocket-cad.webp" alt="CAD assembly of an autonomous rocket system" />
+            <figcaption>CAD context for the vehicle and landing hardware.</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-details">
+          <div><h4>My contribution</h4><p>Designed and iterated structural components in Siemens NX and worked on the mechanical interface between the rocket and landing system. Design decisions had to account for loading, stiffness, assembly, manufacturability, and interfaces with controls.</p></div>
+          <div><h4>Engineering takeaway</h4><p>A component can be correct in CAD and still fail at the system level. Interface requirements, assembly access, sensing, controls, and downstream hardware all matter.</p></div>
+          <div><h4>Tools</h4><p>Siemens NX · MATLAB · mechanical design · structures · integration · design reviews</p></div>
+        </div>
+      </article>
+
+      <article id="research" class="case-study reveal">
+        <div class="case-title">
+          <div>
+            <p class="eyebrow">PURDUE COOLING TECHNOLOGIES RESEARCH CENTER</p>
+            <h3>TPMS Heat Exchanger CFD & Validation</h3>
+          </div>
+          <p class="case-summary">Computational design and analysis of advanced heat exchanger geometries for high-density data-center cooling, with a focus on heat transfer, pressure drop, flow behavior, and model validation.</p>
+        </div>
+
+        <div class="media-grid three research-media">
+          <figure class="media-frame contain">
+            <img src="assets/tpms-geometry.webp" alt="TPMS heat exchanger geometry model with inlet and outlet regions" />
+            <figcaption>TPMS geometry and computational domain.</figcaption>
+          </figure>
+          <figure class="media-frame contain">
+            <img src="assets/cfd-flow.webp" alt="CFD result showing hot-to-cold flow behavior through a heat exchanger" />
+            <figcaption>Representative thermal/flow visualization.</figcaption>
+          </figure>
+          <figure class="media-frame video-frame">
+            <video controls muted playsinline preload="metadata" poster="assets/cfd-flow.webp">
+              <source src="assets/cfd-animation.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Time-resolved visualization from CFD post-processing.</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-details">
+          <div><h4>What I analyze</h4><p>Temperature distributions, velocity fields, pressure drop, and overall thermal performance in liquid-to-liquid heat exchanger configurations.</p></div>
+          <div><h4>How I validate</h4><p>I compare numerical results against heat-transfer and fluid-mechanics fundamentals and investigate mesh quality, boundary conditions, material properties, and modeling assumptions when results do not make physical sense.</p></div>
+          <div><h4>Tools</h4><p>OpenFOAM · ANSYS · CFD · heat transfer · fluid mechanics · post-processing</p></div>
+        </div>
+        <div class="callout">Presented co-authored work on functionally graded TPMS heat exchangers at Purdue’s Summer Undergraduate Research Conference.</div>
+      </article>
+
+      <article class="case-study reveal">
+        <div class="case-title">
+          <div>
+            <p class="eyebrow">PURDUE SOLAR CAR RACING</p>
+            <h3>Brake System Design & Vehicle Integration</h3>
+          </div>
+          <p class="case-summary">Mechanical design work on the primary braking system, balancing driver effort, packaging, safety, manufacturability, and integration with the vehicle.</p>
+        </div>
+
+        <div class="media-grid three">
+          <figure class="media-frame">
+            <img src="assets/solar-car-interior.webp" alt="Interior of a Purdue Solar Racing vehicle under assembly" />
+            <figcaption>Team vehicle assembly and systems integration.</figcaption>
+          </figure>
+          <figure class="media-frame">
+            <img src="assets/solar-car-fabrication.webp" alt="Solar car body fabrication mold in a workshop" />
+            <figcaption>Team fabrication context during vehicle development.</figcaption>
+          </figure>
+          <figure class="media-frame">
+            <img src="assets/solar-car-complete.webp" alt="Completed Purdue solar car loaded in a trailer" />
+            <figcaption>Integrated vehicle hardware.</figcaption>
+          </figure>
+        </div>
+
+        <div class="case-details">
+          <div><h4>Problem</h4><p>Initial calculations showed the braking system would require roughly <strong>200 lb</strong> of driver pedal force—far too high for practical operation.</p></div>
+          <div><h4>Iteration</h4><p>Reworked the braking-system geometry to increase mechanical advantage while considering packaging, structural integrity, safety, and manufacturability.</p></div>
+          <div><h4>Result</h4><p>Reduced the calculated pedal-force requirement to approximately <strong>40 lb</strong>.</p></div>
+        </div>
+        <div class="tags"><span>SolidWorks</span><span>Mechanics</span><span>Design Iteration</span><span>DFM</span><span>Vehicle Systems</span></div>
+      </article>
+    </section>
+
+    <section id="skills" class="section shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">TOOLKIT</p>
+        <h2>Technical skills.</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill reveal"><h3>CAD</h3><p>Siemens NX · SolidWorks · Creo</p></div>
+        <div class="skill reveal"><h3>Simulation & Analysis</h3><p>ANSYS · OpenFOAM · MATLAB</p></div>
+        <div class="skill reveal"><h3>Manufacturing & Prototyping</h3><p>3D Printing · CNC Machining · Manual Milling · Woodworking · Power & Hand Tools</p></div>
+        <div class="skill reveal"><h3>Engineering Focus</h3><p>Mechanical Design · CFD · Heat Transfer · Structures · Hardware Integration · Testing</p></div>
+      </div>
+    </section>
+
+    <section class="contact section shell reveal">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Interested in my work?</h2>
+      <p>I’m pursuing mechanical engineering internship opportunities in hardware, robotics, aerospace, thermal systems, and product development.</p>
+      <a class="btn primary" href="mailto:wyatt.s.catz@gmail.com">wyatt.s.catz@gmail.com</a>
+    </section>
+  </main>
+
+  <footer class="shell"><span>© 2026 Wyatt Catz</span><span>Purdue University · Mechanical Engineering</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
